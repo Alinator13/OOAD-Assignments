@@ -1,0 +1,38 @@
+RegisterUser:
+    Create new user from information provided
+    add new user to the hashmap with username as key
+UpdateUser:
+    find user from hashmap using username
+    if new name is different from old name
+        update user name
+    if new username is different from old username
+        remove user from hashmap
+        update user username
+        add user back to hashmap
+    if new email is different from old email
+        update user email
+    if new password is different from old passowrd
+        update user password
+PostQuestion:
+    get user from hashmap with username
+    send question info to user to create question
+PostSolution:
+    get user from hashmap with username
+    send question id and solution info to user to create solution for the question
+ UpdateQuestion:
+    get user from hashmap with username
+    send question id of question to update and new question info to the user to update the question
+ UpdateSolution:
+    get user from hashmap with username
+    send solution id of solution to update and new solution info to the user to update the solution
+    //(note that the solution object stored in the users hashmap and the object stored in the question 
+    //are really memory location or pointers depending on particular language)
+DeleteQuestion:
+    get user from hashmap with username
+    send question id to user to delete the question
+SupportQuestion:
+    get user from hashmap with username
+    send question id of the question to support to the user
+    get username of user that owns question
+    find posting user from hashmap with username
+    send user question id of the question that was supported
